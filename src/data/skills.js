@@ -1,0 +1,46 @@
+export const skills = {
+    frontend: [
+        { name: 'HTML', icon: 'html5' },
+        { name: 'CSS', icon: 'css3' },
+        { name: 'JavaScript', icon: 'javascript' },
+        { name: 'React', icon: 'react' },
+        { name: 'shadcn/ui', icon: 'https://simpleicons.org/icons/shadcnui.svg' },
+    ],
+    backend: [
+        { name: 'Node.js', icon: 'nodejs' },
+        { name: 'Express', icon: 'express' },
+        { 'name': 'Next.js', 'icon': 'nextjs' },
+        { 'name': 'Supabase', 'icon': 'supabase' },
+        { 'name': 'Flask', 'icon': 'flask' },
+        { 'name': 'REST APIs', 'icon': 'postman' },
+    ],
+    databases: [
+        { name: 'MongoDB', icon: 'mongodb' },
+        { name: 'PostgreSQL', icon: 'postgresql' },
+        { name: 'MySQL', icon: 'mysql' },
+        { name: 'SQLite', icon: 'sqlite' },
+    ],
+    languages: [
+        { name: 'JavaScript', icon: 'javascript' },
+        { name: 'Python', icon: 'python' },
+        { name: 'TypeScript', icon: 'typescript' },
+        { name: 'C++', icon: 'cplusplus' },
+        { name: 'CSS', icon: 'css3' },
+    ],
+    tools: [
+        { name: 'Git', icon: 'git' },
+        { name: 'GitHub', icon: 'github' },
+        { name: 'Docker', icon: 'docker' },
+        { name: 'VS Code', icon: 'vscode' },
+        { name: 'Postman', icon: 'postman' },
+    ],
+    extras: [
+        { 'name': 'Selenium', 'icon': 'selenium' },
+        { 'name': 'Web Scraping', 'icon': 'https://simpleicons.org/icons/chromewebstore.svg' },
+        { 'name': 'OpenAI', 'icon': 'https://logo.svgcdn.com/logos/openai-icon.svg' },
+        { 'name': 'HuggingFace', 'icon': 'https://simpleicons.org/icons/huggingface.svg' },
+        { 'name': 'Gemini', 'icon': 'https://simpleicons.org/icons/googlegemini.svg' },
+        //{ name: 'Adobe Photoshop', icon: 'adobephotoshop' },
+        //{ name: 'Adobe Illustrator', icon: 'adobeillustrator' },
+    ],
+};

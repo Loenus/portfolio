@@ -1,0 +1,27 @@
+import './App.css';
+import Menu from "./sections/Menu";
+import Home from "./sections/Home";
+import About from "./sections/About";
+import Skills from "./sections/Skills";
+import Experience from "./sections/Experience";
+import Education from './sections/Education';
+import Contact from "./sections/Contact";
+import Footer from "./sections/Footer";
+
+export default function App() {
+  return (
+    <>
+      <Menu />
+      <Home />
+      <About />
+      <Skills />
+      <Experience />
+      <Education />
+      education: università + certifications
+      projects: youtube, telegram, proj github
+      reviews? msg from youtube...
+      <Contact />
+      <Footer />
+    </>
+  )
+}
