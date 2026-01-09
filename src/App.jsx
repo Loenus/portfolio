@@ -1,5 +1,7 @@
 import './App.css';
 import Menu from "./sections/Menu";
+import Dock from "./components/Dock";
+import Tooltip from "./components/Tooltip";
 import Home from "./sections/Home";
 import About from "./sections/About";
 import Skills from "./sections/Skills";
@@ -12,6 +14,8 @@ export default function App() {
   return (
     <>
       <Menu />
+      <Dock />
+      <Tooltip />
       <Home />
       <About />
       <Skills />
