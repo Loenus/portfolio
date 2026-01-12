@@ -23,7 +23,7 @@ export default function App() {
       <Experience />
       <Education />
       <Projects />
-      reviews? msg from youtube...
+      {/* reviews? msg from youtube... */}
       <Contact />
       <Footer />
     </>

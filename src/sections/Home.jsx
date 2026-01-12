@@ -7,7 +7,7 @@ import HackerText from '../components/HackerText'
 
 export default function Home() {
     return (
-        <div className="hero-container">
+        <div className="hero-container" id='home'>
             <div className='hero-1'>
                 <IconCloud />
             </div>

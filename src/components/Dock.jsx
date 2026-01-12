@@ -13,6 +13,7 @@ const Dock = ({ ...props }) => {
 
     return (
         <div className="dock" {...props} >
+            <a href="#home">
             <img
                 src={TestImg}
                 height="24"
@@ -22,6 +23,7 @@ const Dock = ({ ...props }) => {
                     padding: "0.5rem",
                 }}
             />
+            </a>
             <DockButton data-tooltip-content="Github" >
                 <SvgIcon icon={Github} target="_blank" to="https://github.com/Loenus" />
             </DockButton>
