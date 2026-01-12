@@ -1,3 +1,6 @@
+import { ThemeContext } from "../context/ThemeContext"
+import { useContext } from "react"
+import ThemeToggle from "../components/ThemeToggle"
 import DockButton from "./DockButton";
 import SvgIcon from "./SvgIcon";
 import Github from "../assets/github.svg?react";
@@ -6,6 +9,7 @@ import Mail from "../assets/mail.svg?react";
 import TestImg from '../assets/test.png';
 
 const Dock = ({ ...props }) => {
+    const { theme, toggleTheme } = useContext(ThemeContext);
 
     return (
         <div className="dock" {...props} >
@@ -26,6 +30,9 @@ const Dock = ({ ...props }) => {
             </DockButton>
             <DockButton data-tooltip-content="Mail">
                 <SvgIcon icon={Mail} target="_blank" to="mailto:lollo.diaspro@gmail.com" />
+            </DockButton>
+            <DockButton data-tooltip-content="Theme" onClick={toggleTheme}>
+                <ThemeToggle theme={theme} />
             </DockButton>
         </div>
     );

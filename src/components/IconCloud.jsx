@@ -1,3 +1,5 @@
+import { ThemeContext } from "../context/ThemeContext"
+import { useContext } from "react"
 import { Cloud, renderSimpleIcon } from 'react-icon-cloud';
 import { siPython, siReact, siJavascript, siNeo4j, siTypescript, siUdemy, siDocker, siKubernetes, siMongodb, siExpress, siVite, siGit, siGithub, siHtml5, siCss, siGooglegemini, siNodedotjs, siSupabase, siBootstrap, siPostgresql, siPostman } from 'simple-icons'; 
 
@@ -6,10 +8,12 @@ const cloudIcons = [siPython, siReact, siJavascript, siNeo4j, siTypescript, siUd
 
 
 const IconCloud = () => {
+    const { theme } = useContext(ThemeContext);
+
     const icons = [...cloudIcons].map((icon) => {
         return renderSimpleIcon({
             minContrastRatio: 21,
-            fallbackHex: '#000', //'#000' o #fff
+            fallbackHex: (theme == 'dark') ? '#fff' : '#000',
             icon,
             size: 72,
             aProps: {
