@@ -24,6 +24,11 @@ export default function Education() {
                             <TimeStamp stamp="2024 - now" />
                             <p>media: 28</p>
                         </TimelineItem>
+                        <TimelineItem icon={<img src={TestImg} />} bgColor="#444444">
+                            <h4>Certification</h4>
+                            <TimeStamp stamp="2025" />
+                            <p>ttt</p>
+                        </TimelineItem>
                     </Timeline>
                 </div>
             </div>

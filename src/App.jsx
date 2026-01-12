@@ -23,7 +23,6 @@ export default function App() {
       <Experience />
       <Education />
       <Projects />
-      education: università + certifications
       reviews? msg from youtube...
       <Contact />
       <Footer />

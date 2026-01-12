@@ -156,3 +156,31 @@
 .menu-toggle.open .hamburger-3 {
     transform: translate3d(0, 0, 0) rotate(-45deg);
 }
+
+.menu-item i.light {
+    color: white;
+    /* icone chiare */
+}
+
+.menu-item i.dark {
+    color: black;
+    /* icone scure */
+}
+
+/* se vuoi anche hover */
+.menu-item i.light:hover {
+    color: #eee;
+}
+
+.menu-item i.dark:hover {
+    color: #333;
+}
+
+
+.hamburger.light {
+    background-color: white;
+}
+
+.hamburger.dark {
+    background-color: black;
+}

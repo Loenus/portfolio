@@ -1,9 +1,22 @@
-import { useState } from "react";
+import { ThemeContext } from "../context/ThemeContext"
+import { useState, useContext } from "react";
 import "../styles/GooeyMenu.css";
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
 export default function GooeyMenu() {
     const [open, setOpen] = useState(false);
+
+    const { theme } = useContext(ThemeContext);
+
+    const menuItems = [
+        { href: '#about', icon: 'fa-user' },
+        { href: '#skills', icon: 'fa-bar-chart' },
+        { href: '#experience', icon: 'fa-briefcase' },
+        { href: '#education', icon: 'fa-award' },
+        { href: '#projects', icon: 'fa-diagram-project' },
+        { href: '#contact', icon: 'fa-envelope' },
+    ];
+
 
     return (
         <>
@@ -40,18 +53,18 @@ export default function GooeyMenu() {
                     onClick={() => setOpen(!open)}
                     aria-label="menu-open"
                 >
-                    <span class="hamburger hamburger-1"></span>
-                    <span class="hamburger hamburger-2"></span>
-                    <span class="hamburger hamburger-3"></span>
+                    <span className={`hamburger hamburger-1 ${theme === 'dark' ? 'light' : 'dark'}`}></span>
+                    <span className={`hamburger hamburger-2 ${theme === 'dark' ? 'light' : 'dark'}`}></span>
+                    <span className={`hamburger hamburger-3 ${theme === 'dark' ? 'light' : 'dark'}`}></span>
                 </button>
 
-                <div className={`menu ${open ? "open" : ""}`}>
-                    <a href="#about" class="menu-item"> <i class="fa fa-plus"></i> </a>
-                    <a href="#skills" class="menu-item"> <i class="fa fa-bar-chart"></i> </a>
-                    <a href="#experience" class="menu-item"> <i class="fa fa-heart"></i> </a>
-                    <a href="#education" class="menu-item"> <i class="fa fa-heart"></i> </a>
-                    <a href="#projects" class="menu-item"> <i class="fa fa-heart"></i> </a>
-                    <a href="#contact" class="menu-item"> <i class="fa fa-envelope"></i> </a>
+
+                <div className={`menu ${open ? 'open' : ''}`}>
+                    {menuItems.map((item, index) => (
+                        <a key={index} href={item.href} className="menu-item">
+                            <i className={`fa ${item.icon} ${theme === 'dark' ? 'light' : 'dark'}`}></i>
+                        </a>
+                    ))}
                 </div>
             </div>
         </>
