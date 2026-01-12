@@ -24,15 +24,9 @@ export default function App() {
       <Education />
       <Projects />
       education: università + certifications
-      projects: youtube, telegram, proj github
       reviews? msg from youtube...
       <Contact />
       <Footer />
-
-      ☰
-      TODO: 1 aggiungere projects,
-      2 sistemare il menu
-      3 inserire i veri dati...
     </>
   )
 }
