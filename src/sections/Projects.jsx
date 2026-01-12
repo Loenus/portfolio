@@ -7,9 +7,9 @@ export default function Projects() {
       <h2>Projects</h2>
       <Holder>
         <ProjectCard>
-          <img src='Finance.png' alt='Finance' />
+          <img src='logo.png' alt='Finance' />
           <Content>
-            <h3>Finanza che conta</h3>
+            <h3>Finanza-che-conta</h3>
             <p>Controlla...</p>
             <Tags>
               <Tag hashtag="Telegram Bot" />
@@ -19,16 +19,16 @@ export default function Projects() {
           <CardActions visit="https://t.me/finanzacheconta" source="https://github.com/Loenus/finanza-che-conta" />
         </ProjectCard>
         <ProjectCard>
-          <img src='Unity' alt='Unity' />
+          <img src='Unity' alt='Unity' /> {/* TODO recuperare dal pc con i file */}
           <Content>
-            <h3>Youtube</h3>
-            <p>Canale in cui divulgo</p>
+            <h3>Unity Tutorial</h3>
+            <p>Divulgazione</p>
             <Tags>
               <Tag hashtag="YouTube" />
               <Tag hashtag="Personal Brand" />
             </Tags>
           </Content>
-          <CardActions visit="https://t.me/finanzacheconta" />
+          <CardActions visit="https://www.youtube.com/@FactotumProduction/videos" />
         </ProjectCard>
         <ProjectCard>
           <img src='dbPlain.png' alt='dbPlain' />
@@ -43,7 +43,7 @@ export default function Projects() {
           <CardActions source="https://github.com/dbPlain/dbPlain" />
         </ProjectCard>
         <ProjectCard>
-          <img src='EventsAggregator.png' alt='EventsAggregator' />
+          <img src='ruby-on-rails.png' alt='EventsAggregator' />
           <Content>
             <h3>EventsAggregator</h3>
             <p>Test</p>
@@ -52,17 +52,6 @@ export default function Projects() {
             </Tags>
           </Content>
           <CardActions source="https://github.com/EventsAggregator/EventsAggregator" />
-        </ProjectCard>
-        <ProjectCard>
-          <img src='syno.png' alt='syno' />
-          <Content>
-            <h3>Synology Photos Memory</h3>
-            <p>Test</p>
-            <Tags>
-              <Tag hashtag="Synology" />
-            </Tags>
-          </Content>
-          <CardActions source="https://github.com/treyg/synology-photos-memories" />
         </ProjectCard>
       </Holder>
     </div>
