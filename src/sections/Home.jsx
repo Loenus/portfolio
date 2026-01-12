@@ -25,7 +25,7 @@ export default function Home() {
                         </div>
                         <div className="hacker-text-wrapper">
                             <HackerText
-                                words={["Fullstack Developer", "API Expert", "Data Engineer"]}
+                                words={["Fullstack Developer", "API Expert", "Data Engineer", "DevOps Specialist"]}
                                 interval={4500}
                                 transitionDuration={900}
                             />
