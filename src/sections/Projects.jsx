@@ -44,6 +44,7 @@ export default function Projects() {
           <CardActions visit="https://www.youtube.com/@FactotumProduction/videos" />
         </ProjectCard>
         <ProjectCard>
+          {/* TODO ritrovare il logo quando il tema è chiaro. fixare l'immagine */}
           <img src='dbPlain3.png' alt='dbPlain' />
           <Content>
             <h3>dbPlain</h3>

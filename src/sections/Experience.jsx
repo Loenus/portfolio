@@ -33,7 +33,10 @@ export default function Experience() {
                 </div>
                 <div className='details'>
                     <h3>Open Source Contribution</h3>
-                    <p>Actively contributed to open-source projects by developing new features, resolving issues, and enhancing documentation. Engaged with the community through code reviews and discussions to drive improvements.</p>
+                    <p>
+                        Actively contributed to open-source projects by developing new features, resolving issues, and enhancing documentation. Engaged with the community through code reviews and discussions to drive improvements.
+                        I integrate github actions where I can.
+                    </p>
                     <div className="repo-list">
                         <a href="https://github.com/treyg/synology-photos-memories" target="_blank" rel="noopener noreferrer" className="repo-button">
                             <Github />

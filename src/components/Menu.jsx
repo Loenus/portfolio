@@ -59,7 +59,7 @@ export default function GooeyMenu() {
                 </button>
 
 
-                <div className={`menu ${open ? 'open' : ''}`} aria-hidden={!open}>
+                <div className={`menu ${open ? 'open' : ''}`}>
                     {menuItems.map((item, index) => (
                         <a key={index} href={item.href} className="menu-item">
                             <i className={`fa ${item.icon} ${theme === 'dark' ? 'light' : 'dark'}`}></i>

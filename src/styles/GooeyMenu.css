@@ -9,7 +9,7 @@
     border: 1px solid var(--comp-border);
     box-shadow: var(--comp-shadow);
 
-    filter: url("#gooey-strong");
+    /*filter: url("#gooey-strong");*/
 
     z-index: 1000;
 }
