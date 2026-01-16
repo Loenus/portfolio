@@ -48,7 +48,7 @@
     gap: 0.4rem;
 }
 
-.cert-list li {
+.cert-pill {
     display: inline-flex;
     align-items: center;
     gap: 0.35rem;
@@ -61,6 +61,8 @@
 
     font-size: 0.8rem;
     cursor: pointer;
+    text-decoration: none;
+    color: inherit;
 
     transition:
         background-color 0.2s ease,
@@ -68,6 +70,11 @@
         transform 0.15s ease;
 }
 
+.cert-pill:hover {
+    background-color: var(--clr-comp-hover);
+    border-color: var(--clr-bdr-hover);
+    transform: translateY(-1px);
+}
 
 .cert-list a {
     display: inline-flex;
@@ -78,8 +85,3 @@
     text-decoration: none;
 }
 
-.cert-list li:hover {
-    background-color: var(--clr-comp-hover);
-    border-color: rgba(255, 255, 255, 0.3);
-    transform: translateY(-1px);
-}

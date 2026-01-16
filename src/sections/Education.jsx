@@ -26,20 +26,35 @@ export default function Education() {
                             <TimeStamp stamp="2023 - 2025" />
                             <ul className="cert-list">
                                 <li>
-                                    <i className={`fa-solid fa-cloud ${theme === 'dark' ? 'light' : 'dark'}`}></i>
-                                    <a href="https://drive.google.com/file/d/1wXaerB8ItphfVFVveryuM0BtzSH0LiUN/view?usp=sharing" target="_blank" rel="noreferrer">
-                                        Generative AI Essenials on AWS
+                                    <a 
+                                        href="https://drive.google.com/file/d/1wXaerB8ItphfVFVveryuM0BtzSH0LiUN/view?usp=sharing" 
+                                        target="_blank" 
+                                        rel="noreferrer"
+                                        className="cert-pill"
+                                    >
+                                        <i className={`fa-solid fa-cloud ${theme === 'dark' ? 'light' : 'dark'}`}></i>
+                                        Generative AI Essentials on AWS
                                     </a>
                                 </li>
                                 <li>
-                                    <i className={`fa fa-cubes ${theme === 'dark' ? 'light' : 'dark'}`}></i>
-                                    <a href="https://drive.google.com/file/d/16Hp1MtAHx1I17amjdU5k6Rnif1cyqSrB/view?usp=sharing" target="_blank" rel="noreferrer">
+                                    <a 
+                                        href="https://drive.google.com/file/d/16Hp1MtAHx1I17amjdU5k6Rnif1cyqSrB/view?usp=sharing" 
+                                        target="_blank" 
+                                        rel="noreferrer"
+                                        className="cert-pill"
+                                    >
+                                        <i className={`fa fa-cubes ${theme === 'dark' ? 'light' : 'dark'}`}></i>
                                         Certified Kubernetes Application Developer
                                     </a>
                                 </li>
                                 <li>
-                                    <i className={`fa fa-database ${theme === 'dark' ? 'light' : 'dark'}`}></i>
-                                    <a href="https://graphacademy.neo4j.com/c/f2eb92b3-48e2-4cee-a1f8-f65327e22e77/" target="_blank" rel="noreferrer">
+                                    <a 
+                                        href="https://graphacademy.neo4j.com/c/f2eb92b3-48e2-4cee-a1f8-f65327e22e77/" 
+                                        target="_blank" 
+                                        rel="noreferrer"
+                                        className="cert-pill"
+                                    >
+                                        <i className={`fa fa-database ${theme === 'dark' ? 'light' : 'dark'}`}></i>
                                         Neo4j Certified Professional
                                     </a>
                                 </li>
