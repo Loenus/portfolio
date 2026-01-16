@@ -280,9 +280,21 @@
 }
 
 
+.timeline-dot {
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background-color: var(--clr-accent);
+    box-shadow: 0 0 0 2px var(--clr-accent-l2);
+    margin: 2px;
+}
+.timeline-icon:has(.timeline-dot) {
+    left: -0.8px;
+}
+
 .timeline-icon {
     position: absolute;
-    top: 50%;
+    top: 33%;
     left: 0;
     transform: translate(-50%, -50%);
     padding: 5px;
@@ -300,7 +312,7 @@
     height: 2rem !important;
     border-radius: 50%;
     color: var(--clr);
-    background-color: var(--bg-clr);
+    /*background-color: var(--bg-clr);*/
 }
 
 .timeline-item h1,

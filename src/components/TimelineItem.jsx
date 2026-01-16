@@ -1,9 +1,18 @@
+const DefaultDot = () => (
+    <span className="timeline-dot" aria-hidden="true" />
+);
+
 export default function TimelineItem({ children, icon, color = 'var(--clr-accent)', bgColor = 'transparent', to }) {
-    let IconElement;
-    if (typeof icon === 'string') {
-        IconElement = <img src={icon} alt="icon" />;
+    
+    const hasIcon = icon != null;
+    let IconElement = null;
+    if (hasIcon) {
+        IconElement =
+            typeof icon === 'string'
+                ? <img src={icon} alt="icon" />
+                : icon;
     } else {
-        IconElement = icon;
+        IconElement = <DefaultDot />;
     }
 
     if (!to) {
