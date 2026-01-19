@@ -12,7 +12,7 @@ export default function GooeyMenu() {
         { href: '#about', icon: 'fa-user' },
         { href: '#skills', icon: 'fa-bar-chart' },
         { href: '#experience', icon: 'fa-briefcase' },
-        { href: '#education', icon: 'fa-award' },
+        { href: '#education', icon: 'fa-school' },
         { href: '#projects', icon: 'fa-diagram-project' },
         { href: '#contact', icon: 'fa-envelope' },
     ];

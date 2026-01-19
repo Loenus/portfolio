@@ -3,11 +3,11 @@ import { useContext } from "react";
 import Timeline from "../components/Timeline";
 import TimelineItem from "../components/TimelineItem";
 import { TimeStamp } from "../components/TimelineItem";
-import TestImg from '../assets/test.png'
 import LaSapienza from '../assets/la-sapienza-logo.png'
 import Plinio from '../assets/plinio.jpeg'
 import Learning from '../assets/learning.svg?react'
 import '../styles/education.css'
+import BreakableText from "../components/test";
 
 export default function Education() {
     const { theme } = useContext(ThemeContext);
@@ -44,7 +44,9 @@ export default function Education() {
                                         className="cert-pill"
                                     >
                                         <i className={`fa fa-cubes ${theme === 'dark' ? 'light' : 'dark'}`}></i>
-                                        Certified Kubernetes Application Developer
+                                        <BreakableText breakpoint={400}> {/* px */}
+                                            Certified Kubernetes Application Developer
+                                        </BreakableText>
                                     </a>
                                 </li>
                                 <li>
