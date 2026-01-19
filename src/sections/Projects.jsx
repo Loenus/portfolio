@@ -13,6 +13,7 @@ export default function Projects() {
             <p>
               Finance is a long-term game, but some indicators are more concrete, current, and tangible than others. But who has time to monitor them regularly and remember to do so? 
               Imagine this: a bot that sends a maximum of two notifications a week to an app you already use. Let the technology work for you, so you can focus on making informed decisions with the least amount of effort possible. Goodbye FOMO!
+              <br/>The project is followed by over 800 italian users.
             </p>
             <Tags>
               <Tag hashtag="Telegram Bot" />
@@ -25,12 +26,13 @@ export default function Projects() {
           <CardActions visit="https://t.me/finanzacheconta" source="https://github.com/Loenus/finanza-che-conta" />
         </ProjectCard>
         <ProjectCard>
-          <img src='Unity' alt='Unity' /> {/* TODO recuperare dal pc con i file */}
+          <img src='unity_tutorial.jpg' alt='Unity' />
           <Content>
             <h3>Unity Tutorial</h3>
             <p>
-              Conceived, produced, and published a series of Italian-language tutorials dedicated to video game development with Unity. 
-              The project has garnered hundreds of thousands of views, becoming a reference point for novice developers.
+            Conceived, produced, and independently published a series of Italian-language tutorials on video game development with Unity, teaching the fundamentals of C programming and game mechanics.
+            Many viewers praised my clear and engaging teaching style in the comments, highlighting the tutorials' effectiveness in helping beginners with their first projects.
+            <br/>The project has garnered hundreds of thousands of views, becoming a widely referenced resource for aspiring developers in the Italian-speaking community.
             </p>
             <Tags>
               <Tag hashtag="YouTube" />
